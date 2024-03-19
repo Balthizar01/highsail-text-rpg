@@ -1,4 +1,5 @@
-﻿using System;
+﻿using highsail_text_rpg.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace highsail_text_rpg
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

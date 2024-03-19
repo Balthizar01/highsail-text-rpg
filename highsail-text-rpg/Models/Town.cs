@@ -5,6 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace highsail_text_rpg.Models
+    ///<summary>
+    ///This is the Town Class. Currently it holds a string for name, string for description,
+    ///and a list of "Building" objects. It has two constructors, one constructing with a list of buildings
+    ///and the other constructing with a normal array of buildings. 
+    ///</summary>
 {
     internal class Town
     {
