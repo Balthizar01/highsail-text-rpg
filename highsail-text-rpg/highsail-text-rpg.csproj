@@ -43,11 +43,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Player\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\highsail-text-rpg.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\highsail-text-rpg.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\highsail-text-rpg.csproj.CoreCompileInputs.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\highsail-text-rpg.exe" />
+    <Content Include="bin\Debug\highsail-text-rpg.pdb" />
+    <Content Include="obj\Debug\highsail-text-rpg.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\highsail-text-rpg.exe" />
+    <Content Include="obj\Debug\highsail-text-rpg.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Items\" />
+    <Folder Include="Models\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
