@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Armor.cs" />
+    <Compile Include="Models\Building.cs" />
+    <Compile Include="Models\Monster.cs" />
+    <Compile Include="Models\Town.cs" />
+    <Compile Include="Models\Weapon.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Player\Player.cs" />
     <Compile Include="Program.cs" />
@@ -65,7 +70,6 @@
   <ItemGroup>
     <Folder Include="Helpers\" />
     <Folder Include="Items\" />
-    <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
