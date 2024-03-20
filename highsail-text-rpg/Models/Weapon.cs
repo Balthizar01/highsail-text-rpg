@@ -11,7 +11,7 @@ namespace highsail_text_rpg.Models
         
 
         private int mDamage;
-        ]
+        
         //constructor
         public Weapon(string name, string description, string itemID, int damage = 1, int weight = 0, int cost = 0) 
             : base(name, description, itemID, ItemType.Weapon, weight, cost)
