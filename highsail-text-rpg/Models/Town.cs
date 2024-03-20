@@ -17,8 +17,6 @@ namespace highsail_text_rpg.Models
         string description;
 
         List<Building> buildings;
-
-        
         //constructors
         public Town(string name, string description, List<Building> buildings)
         {
@@ -52,8 +50,5 @@ namespace highsail_text_rpg.Models
         {
             buildings.Add(building);
         }
-
-
-
     }
 }
