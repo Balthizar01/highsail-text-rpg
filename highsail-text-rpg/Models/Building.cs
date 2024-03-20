@@ -36,7 +36,7 @@ namespace highsail_text_rpg.Models
                 mPeopleInside = PeopleInside;
         }
 
-        Building(string name, BuildingType type, int floors, NPC owner, NPC[] PeopleInside = null)
+        public Building(string name, BuildingType type, int floors, NPC owner, NPC[] PeopleInside = null)
         {
             mName = name;
             mType = type;
@@ -64,6 +64,7 @@ namespace highsail_text_rpg.Models
         public void FloorsNumbie(int numbie) { mFloorsNumbie = numbie; }
         public void AddPerson(NPC personToAdd) {  mPeopleInside.Add(personToAdd); }
         public void RemovePerson(NPC personToRemove) {  mPeopleInside.Remove(personToRemove); }
+        public void Owner(NPC ownerToAdd) {  mOwner = ownerToAdd; }
 
     }
 }
