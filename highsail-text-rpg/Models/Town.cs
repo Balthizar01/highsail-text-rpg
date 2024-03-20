@@ -36,6 +36,7 @@ namespace highsail_text_rpg.Models
         public string Name() {  return name; }
         public string Description() { return description; }
         public List<Building> Buildings() {  return buildings; }
+        public Building []BuildingsArray() {  return buildings.ToArray(); }
         //mutators
 
         public void Name(string newName) { this.name = newName; }
