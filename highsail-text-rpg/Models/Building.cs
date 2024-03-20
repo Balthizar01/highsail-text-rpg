@@ -41,12 +41,12 @@ namespace highsail_text_rpg.Models
             mName = name;
             mType = type;
             mFloorsNumbie = floors;
+            mOwner = owner;
             if (PeopleInside == null)
                 mPeopleInside = new List<NPC>();
             else
                 mPeopleInside = PeopleInside.ToList<NPC>();
-            mPeopleInside = PeopleInside.ToList<NPC>();
-            mOwner = owner;
+            
         }
 
 
