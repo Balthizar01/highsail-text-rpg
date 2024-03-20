@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Models\Armor.cs" />
     <Compile Include="Models\Building.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Monster.cs" />
     <Compile Include="Models\NPC.cs" />
     <Compile Include="Models\Town.cs" />

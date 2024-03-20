@@ -6,36 +6,23 @@ using System.Threading.Tasks;
 
 namespace highsail_text_rpg.Models
 {
-    internal class Weapon
+    internal class Weapon : Item
     {
-        private string mName;
-        private string mDescription;
+        
 
         private int mDamage;
-        private int mWeight;
-        private int mCost;
+        ]
         //constructor
-        public Weapon(string name = "Iron Dagger", string description = "A Rusty Iron Dagger", int damage = 2, int weight = 2, int cost = 2)
+        public Weapon(string name, string description, string itemID, int damage = 1, int weight = 0, int cost = 0) 
+            : base(name, description, itemID, ItemType.Weapon, weight, cost)
         {
-            mName = name;
-            mDescription = description;
             mDamage = damage;
-            mWeight = weight;
-            mCost = cost;
         }
-        //accessors
-        public string Name() { return mName; }
-        public string Description() { return mDescription; }
 
+        //accessor
         public int Damage() { return mDamage; }
-        public int Weight() {  return mWeight; }
-        public int Cost() { return mCost; }
-        //mutators
-        public void Name(string name) { mName = name; } 
-        public void Description(string description) {  mDescription = description; }
-        
+        //mutator
         public void Damage(int damage) { mDamage = damage; }
-        public void Weight(int weight) { mWeight = weight; }
-        public void Cost(int cost) {  mCost = cost; }
+        
     }
 }
