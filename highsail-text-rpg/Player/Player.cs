@@ -13,6 +13,13 @@ namespace highsail_text_rpg
         private int CurrentHealth;
         private int MaxHealth;
 
+        //accessors
+        public int GetLevel() { return Level; }
+        public string GetName() { return Name; }
+        public int GetCurrentHealth() {  return CurrentHealth; }
+        public int GetMaxHealth() {  return MaxHealth; }
+
+
 
     }
 }

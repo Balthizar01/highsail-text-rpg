@@ -24,7 +24,7 @@ namespace highsail_text_rpg.Models
         private List<NPC> mPeopleInside;
         private NPC mOwner;
         //Constructors
-        Building(string name, BuildingType type, int floors, NPC owner, List<NPC> PeopleInside = null)
+        public Building(string name, BuildingType type, int floors, NPC owner, List<NPC> PeopleInside = null)
         {
             mName = name;
             mType = type;

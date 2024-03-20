@@ -21,8 +21,8 @@ namespace highsail_text_rpg.Models
         //constructors
         public NPC(string name, string bio)
         {
-            this.mName = name;
-            this.mBio = bio;
+            mName = name;
+            mBio = bio;
         }
     }
 }

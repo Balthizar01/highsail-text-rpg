@@ -20,16 +20,16 @@ namespace highsail_text_rpg.Models
         //constructors
         public Town(string name, string description, List<Building> buildings)
         {
-            this.mName = name;
-            this.mDescription = description;
-            this.mBuildings = buildings;
+            mName = name;
+            mDescription = description;
+            mBuildings = buildings;
         }
 
         public Town(string name, string description, Building []buildings)
         {
-            this.mName = name;
-            this.mDescription = description;
-            this.mBuildings = buildings.ToList<Building>();
+            mName = name;
+            mDescription = description;
+            mBuildings = buildings.ToList<Building>();
         }
         //accessors
 
@@ -39,8 +39,8 @@ namespace highsail_text_rpg.Models
         public Building []BuildingsArray() {  return mBuildings.ToArray(); }
         //mutators
 
-        public void Name(string newName) { this.mName = newName; }
-        public void Description(string newDescription) { this.mDescription = newDescription; }
+        public void Name(string newName) { mName = newName; }
+        public void Description(string newDescription) { mDescription = newDescription; }
 
         public void RemoveBuilding(Building building)
         {
