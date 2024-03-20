@@ -24,23 +24,40 @@ namespace highsail_text_rpg.Models
         private List<NPC> mPeopleInside;
         private NPC mOwner;
         //Constructors
-        Building(string name, BuildingType type, int Floors, NPC owner, List<NPC> PeopleInside = null)
+        Building(string name, BuildingType type, int floors, NPC owner, List<NPC> PeopleInside = null)
         {
             mName = name;
             mType = type;
-            mFloorsNumbie = Floors;
+            mFloorsNumbie = floors;
             mOwner = owner;
             if (PeopleInside == null)
-            {
                 mPeopleInside = new List<NPC>();
-            } 
+            else
+                mPeopleInside = PeopleInside;
         }
+
+        Building(string name, BuildingType type, int floors, NPC owner, NPC[] PeopleInside = null)
+        {
+            mName = name;
+            mType = type;
+            mFloorsNumbie = floors;
+            if (PeopleInside == null)
+                mPeopleInside = new List<NPC>();
+            else
+                mPeopleInside = PeopleInside.ToList<NPC>();
+            mPeopleInside = PeopleInside.ToList<NPC>();
+            mOwner = owner;
+        }
+
+
+
         //accessors
         public string Name() {  return mName; }
         public BuildingType Type() { return mType; }
         public int NumbiOfFloors() {  return mFloorsNumbie; }
         public List<NPC> PeopleInside() {  return mPeopleInside; }
         public NPC Owner() { return mOwner; }
+
         //mutators
         public void Name(string name) { mName = name; }
         public void Type(BuildingType type) { mType = type; }
