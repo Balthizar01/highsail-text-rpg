@@ -33,8 +33,7 @@ namespace highsail_text_rpg.Models
             if (PeopleInside == null)
             {
                 mPeopleInside = new List<NPC>();
-            }
-            
+            } 
         }
         //accessors
         public string Name() {  return mName; }
