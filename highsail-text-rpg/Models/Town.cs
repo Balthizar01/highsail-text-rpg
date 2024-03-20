@@ -42,12 +42,12 @@ namespace highsail_text_rpg.Models
         public void Name(string newName) { this.name = newName; }
         public void Description(string newDescription) { this.description = newDescription; }
 
-        void RemoveBuilding(Building building)
+        public void RemoveBuilding(Building building)
         {
             buildings.Remove(building);
         }
 
-        void AddBuildings(Building building)
+        public void AddBuilding(Building building)
         {
             buildings.Add(building);
         }
