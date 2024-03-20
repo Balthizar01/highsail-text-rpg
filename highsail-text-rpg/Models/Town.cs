@@ -13,43 +13,43 @@ namespace highsail_text_rpg.Models
 {
     internal class Town
     {
-        string name;
-        string description;
+        string mName;
+        string mDescription;
 
-        List<Building> buildings;
+        List<Building> mBuildings;
         //constructors
         public Town(string name, string description, List<Building> buildings)
         {
-            this.name = name;
-            this.description = description;
-            this.buildings = buildings;
+            this.mName = name;
+            this.mDescription = description;
+            this.mBuildings = buildings;
         }
 
         public Town(string name, string description, Building []buildings)
         {
-            this.name = name;
-            this.description = description;
-            this.buildings = buildings.ToList<Building>();
+            this.mName = name;
+            this.mDescription = description;
+            this.mBuildings = buildings.ToList<Building>();
         }
         //accessors
 
-        public string Name() {  return name; }
-        public string Description() { return description; }
-        public List<Building> Buildings() {  return buildings; }
-        public Building []BuildingsArray() {  return buildings.ToArray(); }
+        public string Name() {  return mName; }
+        public string Description() { return mDescription; }
+        public List<Building> Buildings() {  return mBuildings; }
+        public Building []BuildingsArray() {  return mBuildings.ToArray(); }
         //mutators
 
-        public void Name(string newName) { this.name = newName; }
-        public void Description(string newDescription) { this.description = newDescription; }
+        public void Name(string newName) { this.mName = newName; }
+        public void Description(string newDescription) { this.mDescription = newDescription; }
 
         public void RemoveBuilding(Building building)
         {
-            buildings.Remove(building);
+            mBuildings.Remove(building);
         }
 
         public void AddBuilding(Building building)
         {
-            buildings.Add(building);
+            mBuildings.Add(building);
         }
     }
 }
